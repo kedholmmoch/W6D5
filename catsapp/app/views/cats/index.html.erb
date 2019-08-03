@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">All the Cats!</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @cats.each do |cat| %>
+        <tr>
+            <td><%= cat.name %></td>
+            <td><a href="<%= cat_url(cat)%>">Page</a></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
